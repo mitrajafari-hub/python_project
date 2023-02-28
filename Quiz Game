@@ -1,0 +1,23 @@
+import random
+questions = {
+    "Which bear lives at the North Pole?": "polar bear",
+    "Which is the fastest land animal?": "Cheetah",
+    "Which is the largest animal?": "Blue Whale"
+  }
+  
+  
+def check(question, answer) :
+  if (question , answer.lower()) in questions.items() :
+    print("Correct")
+  else :
+    print("Not Correct")
+    
+
+score = 0
+repeat = True
+while repeat :
+  for key in questions :
+    answer = input(key+' ')
+    check(key,answer)
+    score+=1
+  repeat = False  
