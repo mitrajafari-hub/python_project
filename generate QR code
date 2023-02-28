@@ -1,0 +1,7 @@
+import pyqrcode
+import png
+
+url = "www.google.com"
+qr_code = pyqrcode.create(url)
+qr_code.png("mygoogle.png", scale = 8) 
+print(qr_code.terminal(module_color="black", background="white"))
