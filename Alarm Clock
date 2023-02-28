@@ -1,0 +1,23 @@
+import datetime
+from playsound import playsound
+
+alarm_time = input ("Please enter your time with this format (HH:MM:SS) : ")
+h = int(alarm_time[0:2])
+m = int(alarm_time[3:5])
+s = int(alarm_time[6:8])
+
+print ("alarm clock is: {}:{}:{} ".format(h,m,s) )
+
+while True :
+  now = datetime.datetime.now()
+  print(now)
+  hour = int(now.strftime("%H"))
+  min = int(now.strftime("%M"))
+  sec = int(now.strftime("%S"))
+  
+  if(hour==h):
+    if(min==m):
+      if(sec==s):
+        print("Wake Up!")
+        playsound('audio.mp3')
+        break
