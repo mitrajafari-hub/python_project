@@ -5,5 +5,10 @@ print(Fore.RED + 'Red Text')
 print(Fore.WHITE + 'White Text')
 print(Back.BLACK + 'and with a Black background')
 print(Style.DIM + 'Dim Text')
+
+print(Fore.BLUE+Back.YELLOW+"My name is Mitra Jafari "+ Fore.YELLOW+ Back.BLUE+"I am a Software Developer")
+print(Back.CYAN+"My name is Mitra Jafaril")
+print(Fore.RED + Back.GREEN+ "My name is Mitra Jafari")
+
 print(Style.RESET_ALL)
 print('Normal Style')
