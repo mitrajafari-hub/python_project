@@ -1,0 +1,9 @@
+import colorama
+from colorama import Fore, Back, Style
+
+print(Fore.RED + 'Red Text')
+print(Fore.WHITE + 'White Text')
+print(Back.BLACK + 'and with a Black background')
+print(Style.DIM + 'Dim Text')
+print(Style.RESET_ALL)
+print('Normal Style')
