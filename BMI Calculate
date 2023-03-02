@@ -1,0 +1,22 @@
+import colorama
+from colorama import Fore,Back,Style
+repeat = 'yes'
+while (repeat == 'yes' or repeat == 'YES') :
+  weight = float(input('please enter your weight in kilogram: '))
+  height = float(input('please enter your height in meter: '))
+  BMI = weight/(height*height)
+
+  print("your Body Mass Index is: ",BMI)
+
+  if(BMI>0):
+	  if(BMI<=16.0):
+	  	print(Fore.BLUE + "you are severely underweight")
+	  elif(BMI<=18.5):
+	  	print(Fore.LIGHTGREEN_EX + "you are underweight")
+	  elif(BMI<=25.0):
+		  print(Fore.GREEN + "you are Healthy")
+	  elif(BMI<=30.0):
+		  print(Fore.CYAN + "you are overweight")
+	  else: print(Fore.RED + "you are severely overweight")
+  else:("enter valid details")
+  repeat = input('Do you want to repeat ? (yes/no) ')
